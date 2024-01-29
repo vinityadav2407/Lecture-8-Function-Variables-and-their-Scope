@@ -1,0 +1,45 @@
+Problem statement:-
+Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
+
+Note:
+Fibonacci series is the series of numbers where each number is obtained by adding two previous numbers. The first two numbers in the Fibonacci series are 0 and 1.
+
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints :
+0 <= n <= 10^4
+Sample Input 1 :
+5
+Sample Output 1 :
+true
+Sample Input 2 :
+14
+Sample Output 2 :
+false 
+>>>>
+>>>>>
+Solution:->>
+
+public class Solution {
+
+	public static boolean checkMember(int n){
+			int ps=((5*n*n)+4);
+			int i=1;
+			while(i<ps){
+				if(i*i==ps){
+				return true;
+				}
+				i++;
+			}
+			int PS=((5*n*n)-4);
+			int j=1;
+			while(j<PS){
+				if(j*j==PS){
+				return true;
+				}
+				j++;
+			}
+			
+		
+	 return false;
+}
+}
