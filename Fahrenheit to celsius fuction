@@ -1,0 +1,43 @@
+Problem statement:-
+Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E) and Step Size (W), you need to convert all Fahrenheit values from Start to End at the gap of W, into their corresponding Celsius values and print the table.
+
+Note: You don't have to write the main function or take input. It has already been taken care of and you need to just print the integer value . Just write the code that prints Fahrenheit to Celsius table in the function itself.
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints :
+0 <= S <= 1000
+0 <= E <= 1000
+0 <= W <= 1000
+Sample Input 1:
+0 
+100 
+20
+Sample Output 1:
+0   -17
+20  -6
+40  4
+60  15
+80  26
+100 37
+>>>>
+>>>>>
+Solution:->>
+public class Solution {
+
+	public static void printFahrenheitTable(int start, int end, int step) {
+		/* Your class should be named Solution 
+		 * Don't write main(). 
+		 * Don't read input, it is passed as function argument. 
+		 * Print the specified output in required format. 
+		 * Taking input is handled automatically. 
+		 */
+		 int i=start;
+		  int c=0;
+		 for(i=start; i<=end;i=i+step){
+			  c=((i-32)*5)/9;
+			// c=c+step;
+			System.out.println(i+"	"+c);
+		 }
+		 return;
+		
+	}
+}
